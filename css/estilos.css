@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color1:#733A19;
+    --color2:#D9BD9C;
+    --color3:#D9D9D9;
+    --color4:#262626;
+}
+main{
+    min-height: 100vh;
+   background: linear-gradient(rgba(5,7,12,0.4),rgba(5,7,12,0.4)),
+   url("https://images.squarespace-cdn.com/content/v1/530e6f89e4b0f62bb1b853af/1415804413001-EY599HTB0S4UHJB48WVN/IMG_6516.JPG") no-repeat center center fixed; 
+    background-size:cover;/*cubrir todo*/
+    color:white;
+    
+}
+
+#contenedor{    
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;  
+    font-family: Helvetica, sans-serif;    
+}
+#navegador{
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 20;
+    border:1px solid white;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin:20px;
+}
+.menu li{
+    padding:10px
+}
+.menu li a{
+    text-decoration: none;
+    padding:10px;
+    text-transform: uppercase;
+    color:white
+}
+.menu li a:hover{
+    opacity: 0.5;
+}
+
+.redes{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+.redes li a{
+    padding: 5px;
+}
+.redes li a:hover{
+    opacity: 0.5;
+}
+.redes li a img{
+    filter: invert(100%);
+}
+h1{
+    font-size: 5em;
+    letter-spacing: 7px;
+    padding:20px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+span{
+    font-style: oblique;
+    opacity: 0.75;
+}
+h2{
+    font-size: 1.5em;
+    margin: 20px;
+    text-align: center;
+    
+}
+#cafe{
+    width: 80%;
+    margin:auto;
+    height: 100%;
+}
+#cafe nav ul a{
+    color:blue
+}
+#caf{
+    border-bottom: 2px solid tomato;
+}
+#contenido{
+    padding:20px;
+}
+#bebe img{
+    width: 100%;
+}
+#cafe .redes li a img{
+    filter: invert(0);
+}
+h1 a{
+    color:var(--color4);
+    text-decoration: none;
+    
+}
+h1 a:hover{
+    opacity: 50%;
+}
+#taza{
+     float:left; 
+     margin:10px;    
+}
+#cafeina{
+    float:right;
+    margin:10px;
+}
+#foto{
+    width:50px;
+    border-radius: 50%;    
+}
+figure{
+    float:right;
+    text-align: center;
+    font-size: 0.8em;
+    color:#733A19
+}
+#contenido p{
+    text-align: justify;
+    padding:20px;
+    color: var(--color1);
+    
+
+}
+
+/*Galeria
+# Esto es el contenedor donde meterémos las imágenes*/
+#galeria {
+  /*width: 1250px;  /*el ancho nos limitara el numero de imagenes por fila.  */
+  margin: auto; /*# esto es para centrar todas las imagenes*/
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+    width: 30%;  
+    margin:10px;
+    text-align: center; 
+     
+}
+
+.item img {
+  width:100%;
+  box-shadow: 5px 5px 5px var(--color4);
+  
+}
+.item a{
+    opacity: 0.7;
+}
+.item a:hover{
+    opacity: 1;
+}
+#contenido .item p{
+    text-align: center;
+    color:var(--color1);
+    font-style: italic;
+   
+}.video{
+    border:4px double var(--color4);
+    position:relative;
+    padding-bottom: 56.25%;
+    height:0 ;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px var(--color4);
+    z-index: 10;
+
+}
+.video iframe{
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+}
+#nosotros h3{
+    text-align: center;
+    
+    background-color: var(--color4);
+    color: var(--color3);
+    width: 100%;
+    height: 30px;
+}
+#informacion{
+    width: 75%;
+    font-size: 15px;
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid var(--color4);
+}
+#contenid h4{
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+hr{
+    border: 1px solid var(--color1);
+}
+#cont_nosotros{
+    width: 100%;
+    margin: 20px;
+    color: var(--color1);
+    display: flex;
+    column-gap: 20px;
+    column-rule: 2px solid var(--color1);
+}
+#cont_nosotros {
+    width: 90%;
+    font-size: 18px;
+}
+#cont_nosotros img{
+    margin-top: 80px;
+    width: 270px;
+    height: 180px;
+}
+#publicidad{
+    width: 25%;
+    height: 100%;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid var(--color4);
+}
+#publicidad img{
+    width: 80%;
+    height: 100%;
+}
+#contenid{
+    display: flex;
+    justify-content: center;
+}
+#footer_nosotros{
+    text-align: center;
+    background-color: var(--color4);
+    color: var(--color3);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#contactos{
+    background:linear-gradient(185deg, white, rgba(227, 177, 102, 0.915))
+}
+#tabla{
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#tabla h2{
+    background-color: var(--color4);
+    color: var(--color3);
+}
+#tabla img{
+    margin: 10px;
+    border: 10px solid white;
+    width: 300px;
+    height: 200px;
+}
+#tabla th, tr, td{
+    height: 40px;
+    border: 2px solid white;
+}
+#datos{
+    display: flex;
+    justify-content: center;
+}
+#formulario{
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form label{
+    width: 80%;
+    text-align: left;
+    margin: 5px;
+}
+form input{
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+}
+#mensaje{
+    width: 80%;
+    height: 100px;
+    margin: 5px;
+}
+#boton{
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(95, 93, 93);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+#mapa{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+   
+}
+#mapa h3{
+    background-color: var(--color4);
+    color: var(--color3);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    height: 30px;
+}
+iframe{
+    border: 20px solid var(--color4);
+    width: 80%;
+    height: 400px;
+}
+
